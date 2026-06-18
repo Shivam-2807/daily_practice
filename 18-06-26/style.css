@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 html,body {
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -31,13 +32,19 @@ header p i {
     gap: 10px;
 }
 .hero {
-    border-radius: 2%;
+ border-radius: 2%;
     padding: 10px 50px;
     display: flex;
     width: 80%;
     background-color: antiquewhite;
     height: 100%;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero-cont {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 .hero.dark-active {
     background-color: #121212; /* Your new dark mode color */
@@ -74,14 +81,28 @@ header p i {
     cursor: pointer;
 }
 .card {
-    position: absolute;
     display: flex;
+    padding: 0px 20px;
     align-items: center;
-    justify-content: space-around;
-    top: 12%;
-    left: 5%;
-    height: 50px;
-    width: 800px;
+    justify-content: space-between;
+    height: 10%;
+    width: 90%;
     background-color: rgb(102, 188, 188);
     border-radius: 20px;
+}
+.form1{
+    position:absolute;
+    top: 0px;
+    opacity: 80%;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 7, 7);
+}
+form {
+    color: aliceblue;
+    font-size: 20px;
+
 }

@@ -15,9 +15,15 @@
     </header>
     <section class="sec1">
         <div class="hero">
+            <div class="hero-cont">
             <h1>Today Tasks</h1>
             <button id="b1">Add New Task</button>
+            </div>
         <div class="card">
+            <div>
+            <i class="ri-checkbox-blank-line"></i>
+            <i class="ri-checkbox-line"></i>
+            </div>
             <h>card</h>
             <div>
             <button>Delet</button>
@@ -25,13 +31,37 @@
             </div>
         </div>
         </div>
-        <aside class="asid">
+    <aside class="asid">
          <p><i class="ri-dashboard-line"></i></p>
          <p id="darkmode"><i class="ri-contrast-2-fill"></i></i></p>
          <p ><i class="ri-share-line"></i></p>
          <p><i class="ri-todo-line"></i></p>
          <p><i class="ri-settings-line"></i></p>
-        </aside>
+    </aside>
+</section>
+<section class="form1">
+    <form>
+        <!-- enter text- -->
+         <div>
+        <label for="data-id">Enter Your Task:</label>
+        <input type="text" id="data-id" placeholder="Enter Your Task" required>
+        </div>
+<!-- --select caregory-- -->
+ <div>
+        <label for="cars">Select Task category:</label>
+        <select id="data-category" required>
+        <option value="" selected>select</option>
+        <option value="Food">Food</option>
+        <option value="Urgent">Urgent</option>
+        <option value="Study">Study</option>
+        </select>
+        </div>
+        <div>
+        <button>Add To Task</button>
+        </div>
+        
+    </form>
+<div><button id="closebtn">close</button></div>
 </section>
 <script src="script.js" defer></script>
 </body>
