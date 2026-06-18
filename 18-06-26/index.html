@@ -19,17 +19,7 @@
             <h1>Today Tasks</h1>
             <button id="b1">Add New Task</button>
             </div>
-        <div class="card">
-            <div>
-            <i class="ri-checkbox-blank-line"></i>
-            <i class="ri-checkbox-line"></i>
-            </div>
-            <h>card</h>
-            <div>
-            <button>Delet</button>
-            <button>update</button>
-            </div>
-        </div>
+        <div class="tasks-container"></div>
         </div>
     <aside class="asid">
          <p><i class="ri-dashboard-line"></i></p>
@@ -57,11 +47,70 @@
         </select>
         </div>
         <div>
-        <button>Add To Task</button>
+        <button id="add">Add To Task</button>
         </div>
         
     </form>
 <div><button id="closebtn">close</button></div>
+</section>
+
+<section class="propagation-section">
+    <h2>Event Propagation Demonstration</h2>
+    <p>Click the inner box to see Event Bubbling vs Capturing in the console!</p>
+    
+    <div id="grandparent" class="prop-box">
+        Grandparent Box
+        <div id="parent" class="prop-box">
+            Parent Box
+            <div id="child" class="prop-box">
+                Click Me (Child Box)
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pipeline-section">
+    <h2>Browser Rendering Pipeline</h2>
+    <p>How the browser parses and renders our Task Management Application:</p>
+    
+    <div class="pipeline-flow">
+        <div class="step">
+            <div class="step-num">1</div>
+            <h3>DOM Tree</h3>
+            <p>Parses HTML strings into nodes (e.g., our task card <code>&lt;div&gt;</code>).</p>
+        </div>
+        
+        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        
+        <div class="step">
+            <div class="step-num">2</div>
+            <h3>CSSOM</h3>
+            <p>Combines style rules from <code>style.css</code> into a map of styles.</p>
+        </div>
+        
+        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        
+        <div class="step">
+            <div class="step-num">3</div>
+            <h3>Render Tree</h3>
+            <p>Combines DOM & CSSOM (ignoring hidden things like <code>display: none</code> form).</p>
+        </div>
+        
+        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        
+        <div class="step">
+            <div class="step-num">4</div>
+            <h3>Layout</h3>
+            <p>Calculates exact geometry, pixel sizes, and card positions on screen.</p>
+        </div>
+        
+        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        
+        <div class="step">
+            <div class="step-num">5</div>
+            <h3>Paint</h3>
+            <p>Rasterizes visual pixels (colors, shadows, rounded borders of the UI).</p>
+        </div>
+    </div>
 </section>
 <script src="script.js" defer></script>
 </body>

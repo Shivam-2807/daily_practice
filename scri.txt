@@ -6,3 +6,16 @@ darkmode.addEventListener('click',()=>{
     hero.classList.toggle('dark-active')
     aside.classList.toggle('dark-active')
 });
+
+
+ <div class="card">
+            <div>
+            <i class="ri-checkbox-blank-line"></i>
+            <i class="ri-checkbox-line"></i>
+            </div>
+            <h>card</h>
+            <div>
+            <button>Delet</button>
+            <button>update</button>
+            </div>
+</div>

@@ -25,7 +25,7 @@ header p i {
 .sec1 {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     height: 80%;
@@ -40,6 +40,8 @@ header p i {
     height: 100%;
     flex-direction: column;
     gap: 10px;
+    overflow-y: auto 
+    /* for scroll */
 }
 .hero-cont {
     align-items: center;
@@ -47,8 +49,8 @@ header p i {
     display: flex;
 }
 .hero.dark-active {
-    background-color: #121212; /* Your new dark mode color */
-    color: blanchedalmond;            /* Forces text to turn white */
+    background-color: #121212; 
+    color: blanchedalmond; 
 }
 .hero h1 {
     font-size:30px;
@@ -73,36 +75,186 @@ header p i {
     padding: 50px;
 }
 .asid.dark-active {
-    background-color: #121212; /* Your new dark mode color */
-    color: blanchedalmond;            /* Forces text to turn white */
+    background-color: #121212;
+    color: blanchedalmond;           
 }
 .asid p i {
     font-size: 30px;
     cursor: pointer;
 }
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
 .card {
     display: flex;
-    padding: 0px 20px;
     align-items: center;
     justify-content: space-between;
-    height: 10%;
-    width: 90%;
-    background-color: rgb(102, 188, 188);
+    padding: 15px 20px;  
+    width: 100%;      
+    background-color: rgb(3, 180, 153);
     border-radius: 20px;
 }
-.form1{
-    position:absolute;
-    top: 0px;
-    opacity: 80%;
-    height: 100%;
+
+.form1 {
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100%;
     display: none;
     align-items: center;
     justify-content: center;
-    background-color: rgb(7, 7, 7);
+    background-color: #0b0b0f;
+    opacity: 0.8;
 }
-form {
-    color: aliceblue;
-    font-size: 20px;
 
+/* Form Card */
+form {
+    width: 90%;
+    max-width: 420px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label {
+    color: #b0b3b8;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+form input[type="text"],
+form select {
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0b0b0f;
+    border: 2px solid #3a3a4a;
+    border-radius: 8px;
+}
+
+form option {
+    color: #0f0e0ec3;
+    background-color: #f2f2f4;
+}
+
+form button,
+#closebtn {
+    display: flex;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+form button,
+#add {
+    background-color: aquamarine;
+}
+
+#closebtn {
+    color: #ffffff;
+    background-color: #e63946;
+}
+h3.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* Make checkbox inputs look cleanly sized */
+.card input[type="checkbox"] {
+    transform: scale(1.4);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* ===propagation-section start=== */
+.propagation-section {
+    margin: 40px 20px;
+    padding: 20px;
+    background: #1e1e24;
+    color: white;
+    border-radius: 12px;
+}
+.propagation-section h2 {
+    margin-bottom: 10px;
+}
+.prop-box {
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#grandparent { background-color: #ffb703; color: black; }
+#parent { background-color: #fb8500; color: white; }
+#child { background-color: #219ebc; color: white; text-align: center; }
+
+/* == pipleing section start== */
+.pipeline-section {
+    margin: 40px 20px;
+    padding: 30px;
+    background: #1e1e24;
+    color: white;
+    border-radius: 12px;
+}
+.pipeline-section h2 {
+    margin-bottom: 5px;
+}
+.pipeline-section p {
+    color: #b0b3b8;
+    margin-bottom: 25px;
+}
+.pipeline-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.step {
+    flex: 1;
+    min-width: 160px;
+    background: #2a2a35;
+    padding: 20px 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.step-num {
+    background: rgb(102, 188, 188);
+    color: #121212;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 12px auto;
+}
+.step h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+.step p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+.arrow {
+    color: rgb(102, 188, 188);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
