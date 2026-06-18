@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+header {
+    border-radius: 5px;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    color: antiquewhite;
+    background-color: rgb(13, 13, 13);
+    padding: 5px 110px;
+}
+header p i {
+    font-size: 40px;
+}
+.sec1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    gap: 10px;
+}
+.hero {
+    border-radius: 2%;
+    padding: 10px 50px;
+    display: flex;
+    width: 80%;
+    background-color: antiquewhite;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.hero.dark-active {
+    background-color: #121212; /* Your new dark mode color */
+    color: blanchedalmond;            /* Forces text to turn white */
+}
+.hero h1 {
+    font-size:30px;
+}
+.hero button {
+    border-radius: 5px;
+    height: 30px;
+    width:100px;
+    border: 2.10px solid black;
+    cursor: pointer;
+}
+.asid{
+    border-radius: 2%;
+    background-color: blanchedalmond;
+    color: rgba(12, 12, 12, 0.964);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    gap: 30px;
+    padding: 50px;
+}
+.asid.dark-active {
+    background-color: #121212; /* Your new dark mode color */
+    color: blanchedalmond;            /* Forces text to turn white */
+}
+.asid p i {
+    font-size: 30px;
+    cursor: pointer;
+}
+.card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 12%;
+    left: 5%;
+    height: 50px;
+    width: 800px;
+    background-color: rgb(102, 188, 188);
+    border-radius: 20px;
+}
