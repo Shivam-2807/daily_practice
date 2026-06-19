@@ -194,7 +194,7 @@ h3.completed {
     font-weight: bold;
     cursor: pointer;
 }
-#grandparent { background-color: #ffb703; color: black; }
+#grandparent { background-color: blanchedalmond; color: black; }
 #parent { background-color: #fb8500; color: white; }
 #child { background-color: #219ebc; color: white; text-align: center; }
 
@@ -222,7 +222,7 @@ h3.completed {
 }
 .step {
     flex: 1;
-    min-width: 160px;
+    width: 160px;
     background: #2a2a35;
     padding: 20px 15px;
     border-radius: 8px;
@@ -230,8 +230,8 @@ h3.completed {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .step-num {
-    background: rgb(102, 188, 188);
-    color: #121212;
+    background: blanchedalmond;
+    color: black;
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -252,7 +252,7 @@ h3.completed {
     margin-bottom: 0;
 }
 .arrow {
-    color: rgb(102, 188, 188);
+    color: blanchedalmond;
     font-size: 24px;
     display: flex;
     align-items: center;

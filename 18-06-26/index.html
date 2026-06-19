@@ -75,40 +75,55 @@
     <div class="pipeline-flow">
         <div class="step">
             <div class="step-num">1</div>
-            <h3>DOM Tree</h3>
-            <p>Parses HTML strings into nodes (e.g., our task card <code>&lt;div&gt;</code>).</p>
+            <h3>HTML</h3>
+            </p>
         </div>
         
         <div class="arrow"><i class="ri-arrow-right-line"></i></div>
-        
         <div class="step">
             <div class="step-num">2</div>
-            <h3>CSSOM</h3>
-            <p>Combines style rules from <code>style.css</code> into a map of styles.</p>
+            <h3>Parsing</h3>
+            </p>
         </div>
         
         <div class="arrow"><i class="ri-arrow-right-line"></i></div>
-        
         <div class="step">
             <div class="step-num">3</div>
-            <h3>Render Tree</h3>
-            <p>Combines DOM & CSSOM (ignoring hidden things like <code>display: none</code> form).</p>
+            <h3>Tokenization</h3>
+            </p>
         </div>
-        
         <div class="arrow"><i class="ri-arrow-right-line"></i></div>
-        
         <div class="step">
             <div class="step-num">4</div>
-            <h3>Layout</h3>
-            <p>Calculates exact geometry, pixel sizes, and card positions on screen.</p>
+            <h3>DOM Tree</h3>
+            </p>
         </div>
-        
         <div class="arrow"><i class="ri-arrow-right-line"></i></div>
         
         <div class="step">
             <div class="step-num">5</div>
+            <h3>CSSOM</h3>
+        </div>
+        
+        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        
+        <div class="step">
+            <div class="step-num">6</div>
+            <h3>Render Tree</h3>
+        </div>
+        
+        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        
+        <div class="step">
+            <div class="step-num">7</div>
+            <h3>Layout</h3>
+        </div>
+        
+        <div class="arrow"><i class="ri-arrow-right-line"></i></div>
+        
+        <div class="step">
+            <div class="step-num">8</div>
             <h3>Paint</h3>
-            <p>Rasterizes visual pixels (colors, shadows, rounded borders of the UI).</p>
         </div>
     </div>
 </section>
